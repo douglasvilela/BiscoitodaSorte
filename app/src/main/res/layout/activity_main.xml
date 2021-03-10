@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75a179"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="428dp"
+        android:layout_height="415dp"
+        app:srcCompat="@drawable/crack_fortune_cookie"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BISCOITO DA SORTE"
+        android:textColor="#775d48"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <Button
+        android:id="@+id/btnBiscoito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#775d48"
+        android:text="Abra outro biscoito"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
