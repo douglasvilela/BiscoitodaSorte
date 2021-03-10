@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
         )
 
         binding.btnBiscoito.setOnClickListener{
-            var sorteioLista = Random.nextInt(0, listaSortida.lastIndex).toString()
-            binding.txvSorteio.text = sorteioLista
+            var indice = Random.nextInt(0, listaSortida.lastIndex)
+            binding.txvSorteio.text = listaSortida[indice]
 
             //val alert = AlertDialog.Builder(this@MainActivity)
 
