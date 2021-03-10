@@ -35,13 +35,12 @@ class MainActivity : AppCompatActivity() {
         )
 
         binding.btnBiscoito.setOnClickListener{
-            var sorteioLista = Random.nextInt(0, listaSortida.lastIndex)
-            var novaLista = sorteioLista.toString(sorteioLista)
+            var sorteioLista = Random.nextInt(0, listaSortida.lastIndex).toString()
 
             val alert = AlertDialog.Builder(this@MainActivity)
 
             alert.setTitle("BISCOITO DO DIA!")
-            alert.setMessage(novaLista)
+            alert.setMessage("$sorteioLista")
 
             //Definir rótulo do botão e escutando seu click
             alert.setPositiveButton("Sair") { dialog, which ->
