@@ -32,32 +32,34 @@ class MainActivity : AppCompatActivity() {
             "O insucesso é apenas uma oportunidade para recomeçar de novo com mais experiência.",
             "Motivação não é sinónimo de transformação, mas um passo em sua direção."
 
+
         )
 
         binding.btnBiscoito.setOnClickListener{
             var sorteioLista = Random.nextInt(0, listaSortida.lastIndex).toString()
+            binding.txvSorteio.text = sorteioLista
 
-            val alert = AlertDialog.Builder(this@MainActivity)
+            //val alert = AlertDialog.Builder(this@MainActivity)
 
-            alert.setTitle("BISCOITO DO DIA!")
-            alert.setMessage("$sorteioLista")
+            //alert.setTitle("BISCOITO DO DIA!")
+            //alert.setMessage("$sorteioLista")
 
             //Definir rótulo do botão e escutando seu click
-            alert.setPositiveButton("Sair") { dialog, which ->
-                val mIntent = Intent(this, MainActivity::class.java)
-                startActivity(mIntent)
-            }
+            //alert.setPositiveButton("Sair") { dialog, which ->
+              //  val mIntent = Intent(this, MainActivity::class.java)
+              //  startActivity(mIntent)
+            //}
 
             //Definindo o rótulo do botão  e escutando seu click
-            alert.setNeutralButton("Não") {dialog, which ->}
+            //alert.setNeutralButton("Não") {dialog, which ->}
             /* desativa a possibilidade do usuário cancelar a caixa de diálogo
             ao clicar fora da mesma, dessa forma o usuário é obrigado a interagir
             com os botões
              */
 
-            alert.setCancelable(false)
+           // alert.setCancelable(false)
 
-            alert.show()
+            //alert.show()
 
         }
 
