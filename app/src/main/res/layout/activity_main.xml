@@ -12,7 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="98dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="false"
+        android:alpha="0.2"
+        android:cropToPadding="false"
+        android:scaleType="matrix"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/biscoito_da_sorte" />
 
@@ -20,25 +24,33 @@
         android:id="@+id/btnBiscoito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-5dp"
-        android:layout_marginBottom="111dp"
-        android:backgroundTint="#775d48"
-        android:text="Abra outro biscoito"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#674F3D"
+        android:text="Abra um biscoito da sorte"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txvSorteio"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
-        android:hint="FRASE DO DIA"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="196dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBiscoito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.666" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

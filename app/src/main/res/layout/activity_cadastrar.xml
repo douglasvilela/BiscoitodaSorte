@@ -23,9 +23,10 @@
         android:id="@+id/imageView6"
         android:layout_width="247dp"
         android:layout_height="204dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtCadastroNome"
+        android:layout_marginTop="36dp"
+        android:alpha="0.55"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/biscoitocadastro" />
