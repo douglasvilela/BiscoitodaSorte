@@ -7,29 +7,28 @@
     android:background="#EB775D48"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="339dp"
-        android:layout_height="430dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="8dp"
-        android:alpha="0.3"
+    <Button
+        android:id="@+id/btnLoginConvidado"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#935635"
+        android:text="CONVIDADO"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLoginEntrar"
-        app:srcCompat="@drawable/biscoito_da_sorte" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginCadastrar" />
 
     <Button
         android:id="@+id/btnLoginCadastrar"
         android:layout_width="165dp"
         android:layout_height="43dp"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="123dp"
         android:backgroundTint="#935635"
         android:text="CADASTRAR"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginConvidado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLoginEntrar" />
 
@@ -37,15 +36,12 @@
         android:id="@+id/btnLoginEntrar"
         android:layout_width="165dp"
         android:layout_height="43dp"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="123dp"
         android:backgroundTint="#935635"
         android:text="ENTRAR"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnLoginCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtLoginSenha" />
 
@@ -53,8 +49,6 @@
         android:id="@+id/edtLoginSenha"
         android:layout_width="323dp"
         android:layout_height="40dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginEnd="44dp"
         android:backgroundTint="#935635"
         android:ems="10"
         android:hint="Senha"
@@ -63,6 +57,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnLoginEntrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtLoginEmail" />
 
@@ -70,10 +65,6 @@
         android:id="@+id/edtLoginEmail"
         android:layout_width="323dp"
         android:layout_height="40dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="#935635"
         android:ems="10"
         android:hint="Email"
@@ -82,6 +73,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/edtLoginSenha"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -89,11 +81,10 @@
         android:id="@+id/imageView4"
         android:layout_width="228dp"
         android:layout_height="242dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="83dp"
         android:alpha="0.55"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/biscoitologo" />
@@ -102,15 +93,27 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginEnd="131dp"
         android:alpha="0.8"
         android:text="BISCOITO DA SORTE"
         android:textColor="#493321"
         android:textSize="16sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtLoginEmail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="339dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:rotation="93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginConvidado"
+        app:srcCompat="@drawable/biscoito_da_sorte" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

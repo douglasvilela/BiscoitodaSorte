@@ -26,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
                 binding.edtLoginSenha.error = "Por favor, insira sua senha"
                 binding.edtLoginSenha.requestFocus()
             } else {
+
                 //Shared prefs
                 val sharedPrefs = getSharedPreferences(
                     "cadastro_$email",
@@ -51,6 +52,12 @@ class LoginActivity : AppCompatActivity() {
 
         binding.btnLoginCadastrar.setOnClickListener{
             val mIntent = Intent(this, CadastrarActivity::class.java)
+            startActivity(mIntent)
+        }
+
+        binding.btnLoginConvidado.setOnClickListener{
+            Toast.makeText(this, "Olá convidado, seja bem vindo!", Toast.LENGTH_LONG).show()
+            val mIntent = Intent(this, MainActivity::class.java)
             startActivity(mIntent)
         }
     }
